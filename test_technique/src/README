@@ -1,0 +1,30 @@
+Prerequisites:
+    to start application, it is necessary to have Python 2.7 in path.
+    Your python have to have sqlite3 installed. If it have not, you can install it with this command python pip install sqlite3.
+    (For that, it is also necessary to have pip installed in your python. If you have not, download the script get-pip
+    via the script at this link https://bootstrap.pypa.io/get-pip.py and execute it).
+
+    This application has been developed on Ubuntu 16.04 with Python 2.7.12.
+    It should work on all os with Python 2.7. With others versions of Pythons, the comportment will be undefined.
+
+
+
+Start applications:
+    To start application, open a console, go to the folder containing the project.
+    Go to src folder and run this command "python main.py -dataFilePath 'path to the data base file'"
+
+    The path is obligatory and have to be right. Otherwise, the application won't start.
+
+    All the actions have to be entered in the console with the keyboard (no hui have been developed).
+    Follow instructions displayed in the console in order to know what to do or which info to enter.
+
+
+Implementation:
+    The implementation chosen is the following.
+    The database elements (Film, People, Vehicle, StarShip, Specie, Planet) are represented by a class.
+
+    The management of the data base is done via a class used as a api (DataBaseManager).
+    The request are built in classes before to be retrieved by this api and executed (RequestBuilder).
+
+    The class Application has the role of the controller.
+    Some comments in the code precise the role of each theses classes.
